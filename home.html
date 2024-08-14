@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Diabetes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+    <style>
+        body{
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            text-align: center;
+        }
+        .title{
+            text-align: center;
+            color:firebrick;
+        }
+        table, th, td {
+            border: 1px solid;
+        }
+        input{
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            border-radius: 4px;
+            color: white;
+        }
+        .btn{
+            background-color:rgb(151, 107, 50);
+            border:none;
+            color:black;
+            padding:15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display:inline-block;
+            font-size:16px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>An Effective Way To Predict Diabetes Mellitus Using Machine Learning</h1>
+    <form method="POST" action="/predict">
+        <label for="Pregnancies">Pregnancies</label><br>
+                <input type="text" id="Pregnancies" placeholder="Pregnancies" name="Pregnancies"><br>
+                <br>
+                <label for="Glucose">Glucose</label><br>
+                <input type="text" id="Glucose" placeholder="Glucose" name="Glucose"><br>
+                <br>
+                <label for="BloodPressure">Blood Pressure</label><br>
+                <input type="text" id="BloodPressure" placeholder="Blood Pressure" name="BloodPressure"><br>
+                <br>
+                <label for="SkinThickness">Skin Thickness</label><br>
+                <input type="text" id="SkinThickness" placeholder="Skin Thickness" name="SkinThickness"><br>
+                <br>
+                <label for="Insulin">Insulin</label><br>
+                <input type="text" id="Insulin" placeholder="Insulin" name="Insulin"><br>
+                <br>
+                <label for="BMI">BMI</label><br>
+                <input type="text" id="BMI" placeholder="BMI" name="BMI"><br>
+                <br>
+                <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label><br>
+                <input type="text" id="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function" name="DiabetesPedigreeFunction"><br>
+                <br>
+                <label for="Age">Age</label><br>
+                <input type="text" id="Age" placeholder="Age" name="Age"><br>
+                <br>
+                <input type="submit" value="Predict">
+
+    </form>
+</body>
+</html>
